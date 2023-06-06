@@ -1,0 +1,5 @@
+app:
+  name: "gateway"
+server:
+  tcpAddr: ":2001"
+

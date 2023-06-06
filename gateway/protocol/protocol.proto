@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package = "./;protocol";
+// csharp 命名空间固定写法
+option csharp_namespace = "pb";
+// 消息号
+enum MSG_ID
+{
+    HEART = 0;                          // 心跳
+    LOGIN = 1;                          // 登录
+    LOUOUT = 2;                         // 登出
+}
+
