@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "./;protocol";
+package protocol;
+
+enum CmdId {
+  Cmd_Head = 0;
+  Cmd_Login = 1001;
+  Cmd_Logout = 1002;
+  Cmd_Kick = 1003;
+
+}
+
+message Error {
+  int32 code = 1;
+  string message = 2;
+}
+
+message MyString {
+  string message = 1;
+}
